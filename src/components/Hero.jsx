@@ -101,13 +101,13 @@ const Hero = () => {
                             loop
                             muted
                             playsInline
-                            className="w-full h-full object-cover opacity-90 scale-105"
+                            className="w-full h-full object-cover object-right md:object-center opacity-90 scale-105"
                         />
                     ) : (
                         <img
                             src={slide.src}
                             alt="Sikkim Supreme Background"
-                            className="w-full h-full object-cover opacity-90 scale-105"
+                            className="w-full h-full object-cover object-right md:object-center opacity-70 scale-80"
                         />
                     )}
                     <div className="absolute inset-0 bg-black/40 mix-blend-multiply"></div>
@@ -161,7 +161,7 @@ const Hero = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.6 }}
-                            className={`flex flex-col sm:flex-row gap-4 ${slides[currentSlide].align === 'center' ? 'justify-center' : 'justify-start'}`}
+                            className={`flex flex-col sm:flex-row gap-4 ${slides[currentSlide].align === 'center' ? 'justify-center items-center' : 'justify-start items-start sm:items-start'}`}
                         >
                             <a href={slides[currentSlide].link} className="group bg-accent text-white px-8 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-accent/50 hover:-translate-y-1 font-medium tracking-wide flex items-center justify-center gap-2 max-w-max">
                                 {slides[currentSlide].buttonText}
