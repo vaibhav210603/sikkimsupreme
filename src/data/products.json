@@ -1,0 +1,506 @@
+[
+  {
+    "id": 1,
+    "name": "Pineapple Squash",
+    "category": "SQUASH",
+    "size": "360 ml",
+    "description": "Made from the finest pineapples, it’s a tropical delight in every sip.",
+    "image": "/products/page_1_img_1.png",
+    "price": 108
+  },
+  {
+    "id": 2,
+    "name": "Kiwi Fruit Squash",
+    "category": "SQUASH",
+    "size": "360 ml",
+    "description": "Made from fresh Sikkim kiwis, offering a burst of natural flavor and vitality.",
+    "image": "/products/page_1_img_2.png",
+    "price": 136
+  },
+  {
+    "id": 3,
+    "name": "Orange Squash",
+    "category": "SQUASH",
+    "size": "360 ml",
+    "description": "Refreshingly sweet and tangy, it’s pure tropical bliss.",
+    "image": "/products/page_1_img_3.png",
+    "price": 108
+  },
+  {
+    "id": 4,
+    "name": "Orange Squash",
+    "category": "SQUASH",
+    "size": "660 ml",
+    "description": "A burst of citrus flavor in every sip, it’s ideal for a revitalizing drink.",
+    "image": "/products/page_1_img_4.png",
+    "price": 169
+  },
+  {
+    "id": 5,
+    "name": "Pineapple Squash",
+    "category": "SQUASH",
+    "size": "660ml",
+    "description": "Indulge in the vibrant taste of Sikkim with our Pineapple Squash. Made from the finest pineapples, it’s a tropical delight in every sip.",
+    "image": "/products/page_2_img_1.jpeg",
+    "price": 169
+  },
+  {
+    "id": 6,
+    "name": "Sea Buckthorn Fruit Juice",
+    "category": "JUICE",
+    "size": "200 ml",
+    "description": "Rich in antioxidants and vitamins, offering a burst of natural flavor and vitality.",
+    "image": "/products/page_2_img_2.png",
+    "price": 42
+  },
+  {
+    "id": 7,
+    "name": "Passion Fruit Drink",
+    "category": "JUICE",
+    "size": "200 ml",
+    "description": "Enjoy the exotic taste of passion fruit in every sip. Pure, natural, and delightfully invigorating.",
+    "image": "/products/page_2_img_3.png",
+    "price": 38
+  },
+  {
+    "id": 8,
+    "name": "Orange Fruit Drink",
+    "category": "JUICE",
+    "size": "200 ml",
+    "description": "Experience the natural goodness of fresh Sikkimese oranges.",
+    "image": "/products/page_3_img_1.jpeg",
+    "price": 38
+  },
+  {
+    "id": 9,
+    "name": "Mango Passion Twist",
+    "category": "JUICE",
+    "size": "200 ml",
+    "description": "A delightful blend of mango and passion fruit in every sip. Pure, natural, and delightfully invigorating.",
+    "image": "/products/page_3_img_2.jpeg",
+    "price": 38
+  },
+  {
+    "id": 10,
+    "name": "Lemon Juice",
+    "category": "JUICE",
+    "size": "200 ml",
+    "description": "Zesty juice bursting with flavor, vitality, and wholesome goodness.",
+    "image": "/products/page_3_img_3.jpeg",
+    "price": 38
+  },
+  {
+    "id": 11,
+    "name": "Dalle Turmeric",
+    "category": "PICKLES",
+    "size": "100 gm",
+    "description": "A spicy and aromatic blend of Dalle chilli and turmeric.",
+    "image": "/products/page_3_img_4.jpeg",
+    "price": 115
+  },
+  {
+    "id": 12,
+    "name": "Dalle Schezwan with Garlic",
+    "category": "PICKLES",
+    "size": "100 gm",
+    "description": "A spicy twist on the traditional Dalle pickle with garlic notes.",
+    "image": "/products/page_3_img_5.jpeg",
+    "price": 153
+  },
+  {
+    "id": 13,
+    "name": "Dalle Chilli in Olive Oil",
+    "category": "PICKLES",
+    "size": "100 gm",
+    "description": "Dalle Chilli preserved in olive oil, a spicy, tangy condiment perfect for enhancing any dish.",
+    "image": "/products/page_3_img_6.jpeg",
+    "price": 143
+  },
+  {
+    "id": 14,
+    "name": "Dalle Chilli Crisp",
+    "category": "PICKLES",
+    "size": "100 gm",
+    "description": "Crispy Sikkim Dalle chilli, delivering a bold, smoky heat with wholesome goodness in every bite.",
+    "image": "/products/page_3_img_7.png",
+    "price": 150
+  },
+  {
+    "id": 15,
+    "name": "Dalle Ningro in Seaseme Oil",
+    "category": "PICKLES",
+    "size": "100 gm",
+    "description": "A smoky and aromatic crisp that elevates every dish.",
+    "image": "/products/page_4_img_1.png",
+    "price": 131
+  },
+  {
+    "id": 16,
+    "name": "Dalle Duku",
+    "category": "PICKLES",
+    "size": "100 gm",
+    "description": "Traditional Dalle pickle with Duku.",
+    "image": "/products/page_4_img_2.jpeg",
+    "price": 131
+  },
+  {
+    "id": 17,
+    "name": "Dalle Nakima in Olive Oil",
+    "category": "PICKLES",
+    "size": "100 gm",
+    "description": "Nakima infused in rich olive oil, creating a bold, zesty, and authentic Himalayan flavor delight.",
+    "image": "/products/page_4_img_3.png",
+    "price": 150
+  },
+  {
+    "id": 18,
+    "name": "Dalle Chilli (Dehydrated)",
+    "category": "PICKLES",
+    "size": "100 gm",
+    "description": "Dehydrated Dalle chillies in olive oil for a bold, aromatic Himalayan gourmet delight.",
+    "image": "/products/page_4_img_4.png",
+    "price": 399
+  },
+  {
+    "id": 19,
+    "name": "Dalle Hot Sauce",
+    "category": "PICKLES",
+    "size": "100 gm",
+    "description": "Crafted to perfection for authentic spice lovers seeking natural taste.",
+    "image": "/products/page_4_img_5.png",
+    "price": 84
+  },
+  {
+    "id": 20,
+    "name": "Dalle Pickle",
+    "category": "PICKLES",
+    "size": "400 gm",
+    "description": "Aromatic and spicy, this traditional pickle brings the authentic flavor of Sikkim's fiery Dalle chilies to your table.",
+    "image": "/products/page_4_img_6.png",
+    "price": 309
+  },
+  {
+    "id": 21,
+    "name": "Dalle Vinegar",
+    "category": "PICKLES",
+    "size": "400 gm",
+    "description": "Vinegar infused with the authentic flavor of Sikkim's fiery Dalle chilies.",
+    "image": "/products/page_4_img_7.png",
+    "price": 319
+  },
+  {
+    "id": 22,
+    "name": "Dalle Vinegar",
+    "category": "PICKLES",
+    "size": "200 gm",
+    "description": "Vinegar infused with Dalle chilies, perfect for enhancing salads, marinades, and dips.",
+    "image": "/products/page_4_img_8.png",
+    "price": 206
+  },
+  {
+    "id": 23,
+    "name": "Dalle Bamboo",
+    "category": "PICKLES",
+    "size": "400 gm",
+    "description": "Spicy Dalle chilies and tender bamboo shoots, preserved in olive oil for a unique culinary delight.",
+    "image": "/products/page_4_img_9.jpeg",
+    "price": 253
+  },
+  {
+    "id": 24,
+    "name": "Dalle Paste",
+    "category": "PICKLES",
+    "size": "200 gm",
+    "description": "A smooth paste of Dalle chilies and bamboo shoots, preserved in olive oil for a unique culinary delight.",
+    "image": "/products/page_4_img_10.png",
+    "price": 234
+  },
+  {
+    "id": 25,
+    "name": "Dalle Kinema",
+    "category": "PICKLES",
+    "size": "400 gm",
+    "description": "Fermented soybean with Sikkimese Dalle chilies, perfect for adding a spicy kick to any dish.",
+    "image": "/products/page_5_img_1.jpeg",
+    "price": 187
+  },
+  {
+    "id": 26,
+    "name": "Mixed Pickle",
+    "category": "PICKLES",
+    "size": "400 gm",
+    "description": "Sikkim Mixed Pickle is a tangy blend of local vegetables and spices, offering a burst of authentic Himalayan flavors.",
+    "image": "/products/page_5_img_2.png",
+    "price": 159
+  },
+  {
+    "id": 27,
+    "name": "Dalle with Mutter",
+    "category": "PICKLES",
+    "size": "400 gm",
+    "description": "A blend of Dalle chillies, vegetables and spices, offering a burst of authentic Himalayan flavors.",
+    "image": "/products/page_5_img_3.png",
+    "price": 202
+  },
+  {
+    "id": 28,
+    "name": "Dalle with Mutter/Mula",
+    "category": "PICKLES",
+    "size": "200 gm",
+    "description": "Dalle chillies with peas and radish, delivering a unique Himalayan flavor.",
+    "image": "/products/page_6_img_1.jpeg",
+    "price": 122
+  },
+  {
+    "id": 29,
+    "name": "Mango Pickle",
+    "category": "PICKLES",
+    "size": "400 gm",
+    "description": "Made from local mangoes, infused with traditional spices for a burst of authentic Sikkimese flavor.",
+    "image": "/products/page_6_img_2.png",
+    "price": 155
+  },
+  {
+    "id": 30,
+    "name": "Mixed Pickle",
+    "category": "PICKLES",
+    "size": "5 kg",
+    "description": "Large pack of mixed vegetables fermented with traditional spices for a burst of authentic Sikkimese flavor.",
+    "image": "/products/page_6_img_3.png",
+    "price": 314
+  },
+  {
+    "id": 31,
+    "name": "Mixed Pickle",
+    "category": "PICKLES",
+    "size": "1 kg",
+    "description": "Experience the authentic flavors and rich culinary heritage of Sikkim.",
+    "image": "/products/page_7_img_1.png",
+    "price": 206
+  },
+  {
+    "id": 32,
+    "name": "Gundruk Dalle Pickle (Pouch)",
+    "category": "PICKLES",
+    "size": "150 gm",
+    "description": "Fermented leafy greens with Dalle chilli.",
+    "image": "/products/page_7_img_2.png",
+    "price": 206
+  },
+  {
+    "id": 33,
+    "name": "Mixed Pickle (Pouch)",
+    "category": "PICKLES",
+    "size": "150 gm",
+    "description": "Portable pouch of our authentic Mixed Pickle.",
+    "image": "/products/page_7_img_3.png",
+    "price": 84
+  },
+  {
+    "id": 34,
+    "name": "Pure Dalle Paste",
+    "category": "PICKLES",
+    "size": "1 kg",
+    "description": "Pure Dalle chilli paste, richly spiced, adding authentic Himalayan flavor to every bite.",
+    "image": "/products/page_7_img_4.png",
+    "price": 909
+  },
+  {
+    "id": 35,
+    "name": "Dalle Bamboo (Pouch)",
+    "category": "PICKLES",
+    "size": "150 gm",
+    "description": "Handpicked red chillies and tender bamboo shoots. A perfect blend of heat and taste.",
+    "image": "/products/page_7_img_5.png",
+    "price": 141
+  },
+  {
+    "id": 36,
+    "name": "Passion Fruit Jam",
+    "category": "JAMS",
+    "size": "100 gm",
+    "description": "A delightful blend of fresh passion fruits, offering a tangy-sweet flavor perfect for toast, desserts, and more.",
+    "image": "/products/page_7_img_6.png",
+    "price": 73
+  },
+  {
+    "id": 37,
+    "name": "Kiwi Jam",
+    "category": "JAMS",
+    "size": "260 gm",
+    "description": "Made from fresh kiwis, offering a burst of sweet and tangy flavors.",
+    "image": "/products/page_8_img_1.png",
+    "price": 131
+  },
+  {
+    "id": 38,
+    "name": "Kiwi Jam",
+    "category": "JAMS",
+    "size": "100 gm",
+    "description": "Fresh kiwis, offering a tangy-sweet flavor perfect for toast, desserts, and more.",
+    "image": "/products/page_8_img_2.png",
+    "price": 78
+  },
+  {
+    "id": 39,
+    "name": "Pineapple Jam",
+    "category": "JAMS",
+    "size": "500 gm",
+    "description": "This jam captures the sweetness and tanginess of fresh pineapples, perfect for any treat.",
+    "image": "/products/page_8_img_3.png",
+    "price": 187
+  },
+  {
+    "id": 40,
+    "name": "Orange Marmalade",
+    "category": "JAMS",
+    "size": "260 gm",
+    "description": "Sweetness and tanginess of fresh pineapples, perfect for any treat.",
+    "image": "/products/page_8_img_4.jpeg",
+    "price": 108
+  },
+  {
+    "id": 41,
+    "name": "Orange Marmalade",
+    "category": "JAMS",
+    "size": "500 gm",
+    "description": "Classic orange marmalade with a perfect balance of sweet and citrusy flavors.",
+    "image": "/products/page_9_img_1.png",
+    "price": 187
+  },
+  {
+    "id": 42,
+    "name": "Guava Dalle Spread",
+    "category": "JAMS",
+    "size": "100 gm",
+    "description": "Unique blend of Guava and Dalle chillies, offering sweet heat and bold Himalayan flavor.",
+    "image": "/products/page_9_img_2.png",
+    "price": 75
+  },
+  {
+    "id": 43,
+    "name": "Use this code 43 for Orange Marmalade",
+    "category": "JAMS",
+    "size": "100 gm",
+    "description": "Delicious orange marmalade.",
+    "image": "/products/page_9_img_3.png",
+    "price": 64
+  },
+  {
+    "id": 44,
+    "name": "Mango Jam",
+    "category": "JAMS",
+    "size": "100 gm",
+    "description": "Mango marmalade offers a perfect balance of sweet and citrusy flavors.",
+    "image": "/products/page_9_img_4.png",
+    "price": 75
+  },
+  {
+    "id": 45,
+    "name": "Mixed Fruit Jam",
+    "category": "JAMS",
+    "size": "500 gm",
+    "description": "A delightful blend of fresh mixed fruits, offering a tangy-sweet flavor perfect for toast, desserts, and more.",
+    "image": "/products/page_10_img_1.png",
+    "price": 187
+  },
+  {
+    "id": 46,
+    "name": "Turmeric Powder",
+    "category": "OTHER PRODUCTS",
+    "size": "10 gm",
+    "description": "Rich in aroma, color, and curcumin for healthy, flavorful cooking.",
+    "image": "/products/page_10_img_2.jpeg",
+    "price": 667
+  },
+  {
+    "id": 47,
+    "name": "Tomato Ketchup",
+    "category": "OTHER PRODUCTS",
+    "size": "200 ml",
+    "description": "Fresh tomatoes blended into a smooth, flavorful ketchup. Perfect for sandwiches, snacks, and family meals every day.",
+    "image": "/products/page_10_img_3.png",
+    "price": 89
+  },
+  {
+    "id": 48,
+    "name": "Large Cardamom",
+    "category": "OTHER PRODUCTS",
+    "size": "100 gm",
+    "description": "From pristine Himalayan farms, perfect for enhancing teas, desserts, and gourmet dishes.",
+    "image": "/products/page_10_img_4.png",
+    "price": 133
+  },
+  {
+    "id": 49,
+    "name": "Tsatom",
+    "category": "OTHER PRODUCTS",
+    "size": "500 ml",
+    "description": "Handcrafted ginger candy, made from premium local ginger for a naturally invigorating treat.",
+    "image": "/products/page_10_img_5.png",
+    "price": 220
+  },
+  {
+    "id": 50,
+    "name": "Large Cardamom",
+    "category": "OTHER PRODUCTS",
+    "size": "130 gm",
+    "description": "Perfect for enhancing any dish with a burst of flavor.",
+    "image": "/products/page_11_img_1.jpeg",
+    "price": 410
+  },
+  {
+    "id": 51,
+    "name": "Kiwi Freeze Dried Chips",
+    "category": "OTHER PRODUCTS",
+    "size": "20 gm",
+    "description": "Crunchy and healthy freeze-dried kiwi chips.",
+    "image": "/products/page_11_img_2.jpeg",
+    "price": 150
+  },
+  {
+    "id": 52,
+    "name": "Kosheli - RTS",
+    "category": "KOSHELI",
+    "size": "200 ml",
+    "description": "Ready to serve beverage.",
+    "image": "/products/page_11_img_3.jpeg",
+    "price": 307
+  },
+  {
+    "id": 53,
+    "name": "Kosheli - Pickles",
+    "category": "KOSHELI",
+    "size": "100 gm",
+    "description": "Made with finest ingredients, perfect for any meal.",
+    "image": "/products/page_11_img_4.png",
+    "price": 625
+  },
+  {
+    "id": 54,
+    "name": "Kosheli - RTS",
+    "category": "KOSHELI",
+    "size": "200 ml",
+    "description": "Ready to serve beverage.",
+    "image": "/products/page_11_img_5.png",
+    "price": 315
+  },
+  {
+    "id": 55,
+    "name": "Drinking Water Glass",
+    "category": "KOSHELI",
+    "size": "300 ml",
+    "description": "Pure drinking water from the gardens of nature.",
+    "image": "/products/page_11_img_6.png",
+    "price": 22
+  },
+  {
+    "id": 56,
+    "name": "Packaged Drinking Water",
+    "category": "KOSHELI",
+    "size": "1 ltr",
+    "description": "Pure packaged drinking water.",
+    "image": "/products/page_11_img_7.png",
+    "price": 36
+  }
+]
