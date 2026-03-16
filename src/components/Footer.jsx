@@ -18,11 +18,11 @@ const Footer = () => {
                         {/* MRC Branding */}
                         <div className="mt-6 pt-6 border-t border-gray-100">
                             <div className="mb-4 flex items-center">
-                                <img src="/MRC LOGO.png" alt="MRC Agro" className="h-10 w-auto" />
-                                <span className="ml-2 text-lg font-bold text-primary font-serif">MRC Agro</span>
+                                <img src="/MRC LOGO.png" alt="MRC Agrotech Ltd." className="h-10 w-auto" />
+                                <span className="ml-2 text-lg font-bold text-primary font-serif">MRC Agrotech Ltd.</span>
                             </div>
                             <p className="text-gray-500 text-sm leading-relaxed text-justify pr-4">
-                                Marketed, distributed and webpage maintained by mrcagro.
+                                Marketed, distributed and webpage maintained by MRC Agrotech Ltd.
                             </p>
                         </div>
                     </div>
