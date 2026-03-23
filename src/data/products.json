@@ -524,7 +524,7 @@
   {
     "id": 55,
     "name": "Drinking Water Glass Bottle",
-    "category": "KOSHELI",
+    "category": "WATER",
     "size": "2 ltr",
     "description": "Pure drinking water in a premium glass bottle.",
     "image": "/images/product_images/Drinking Water Glass Bottle 2l.png",
@@ -533,7 +533,7 @@
   {
     "id": 56,
     "name": "Packaged Drinking Water",
-    "category": "KOSHELI",
+    "category": "WATER",
     "size": "1 ltr",
     "description": "Pure packaged drinking water.",
     "image": null,
@@ -551,7 +551,7 @@
   {
     "id": 62,
     "name": "Packaged Drinking Water",
-    "category": "KOSHELI",
+    "category": "WATER",
     "size": "20 ltr",
     "description": "Bulk packaged drinking water from the pristine springs of Sikkim.",
     "image": "/images/product_images/Packaged Drinking Water  20l.png",
@@ -560,7 +560,7 @@
   {
     "id": 63,
     "name": "Packaged Drinking Water",
-    "category": "KOSHELI",
+    "category": "WATER",
     "size": "5 ltr",
     "description": "Family-sized packaged drinking water from the pristine springs of Sikkim.",
     "image": "/images/product_images/Packaged Drinking Water 5l.png",

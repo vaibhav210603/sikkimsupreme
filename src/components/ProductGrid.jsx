@@ -12,7 +12,8 @@ const categoryBgColors = {
     PICKLES: '#ffffffff',      // warm spice
     JAMS: '#ffffffff',         // berry blush
     'OTHER PRODUCTS': '#ffffffff', // earthy sage
-    KOSHELI: '#ffffffff',      // warm cream
+    KOSHELI: '#ffffffff',
+    WATER: '#ffffffff',    // warm cream
 };
 
 const ProductGrid = () => {
