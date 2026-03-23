@@ -2,26 +2,52 @@
 import React, { useState, useMemo } from 'react';
 import products from '../data/products.json';
 import { motion, AnimatePresence } from 'framer-motion';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 import ProductModal from './ProductModal';
-// import { Filter } from 'lucide-react';
+
+// Subtle background colors per category — designed to complement the warm #f7eae1 page bg
+const categoryBgColors = {
+    SQUASH: '#ffffffff',       // warm amber tint
+    JUICE: '#ffffffff',        // soft golden
+    PICKLES: '#ffffffff',      // warm spice
+    JAMS: '#ffffffff',         // berry blush
+    'OTHER PRODUCTS': '#ffffffff', // earthy sage
+    KOSHELI: '#ffffffff',      // warm cream
+};
 
 const ProductGrid = () => {
-    // Get unique categories and format them
     const categories = useMemo(() => {
         return [...new Set(products.map(p => p.category))];
     }, []);
 
     const [selectedCategory, setSelectedCategory] = useState(categories[0]);
     const [selectedProduct, setSelectedProduct] = useState(null);
+    const [showMore, setShowMore] = useState(false);
 
-    const filteredProducts = useMemo(() => {
-        return products.filter(p => p.category === selectedCategory);
+    // Split products into those with images (shown) and without (hidden behind Show More)
+    const { withImage, withoutImage } = useMemo(() => {
+        const categoryProducts = products.filter(p => p.category === selectedCategory);
+        return {
+            withImage: categoryProducts.filter(p => p.image),
+            withoutImage: categoryProducts.filter(p => !p.image),
+        };
     }, [selectedCategory]);
+
+    // Reset showMore when category changes
+    const handleCategoryChange = (category) => {
+        setSelectedCategory(category);
+        setShowMore(false);
+    };
+
+    const displayedProducts = showMore ? [...withImage, ...withoutImage] : withImage;
+    const hiddenCount = withoutImage.length;
 
     const formatCategory = (cat) => {
         if (cat === 'KOSHELI') return 'Gift Packs';
         return cat.toLowerCase().replace(/(?:^|\s)\S/g, a => a.toUpperCase());
     }
+
+    const tileBg = categoryBgColors[selectedCategory] || '#FFF3E0';
 
     return (
         <section id="products" className="py-2 bg-[#f7eae1] scroll-mt-24">
@@ -37,7 +63,7 @@ const ProductGrid = () => {
                     {categories.map((category) => (
                         <button
                             key={category}
-                            onClick={() => setSelectedCategory(category)}
+                            onClick={() => handleCategoryChange(category)}
                             className={`px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 border ${selectedCategory === category
                                 ? 'bg-primary border-primary text-white shadow-lg shadow-primary/30 transform scale-105'
                                 : 'bg-white border-gray-200 text-gray-600 hover:border-primary hover:text-primary'
@@ -54,7 +80,7 @@ const ProductGrid = () => {
                     className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
                 >
                     <AnimatePresence>
-                        {filteredProducts.map((product) => (
+                        {displayedProducts.map((product) => (
                             <motion.div
                                 layout
                                 initial={{ opacity: 0, y: 20 }}
@@ -63,14 +89,16 @@ const ProductGrid = () => {
                                 transition={{ duration: 0.3 }}
                                 key={product.id}
                                 onClick={() => setSelectedProduct(product)}
-                                className="group bg-[#f29652] rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 cursor-pointer border border-gray-100 flex flex-col h-full"
+                                className="group rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 cursor-pointer border border-gray-100 flex flex-col h-full"
+                                style={{ backgroundColor: product.image ? tileBg : '#f29652' }}
                             >
-                                <div className="h-64 overflow-hidden relative bg-gray-100">
+                                <div className="h-64 overflow-hidden relative" style={{ backgroundColor: product.image ? tileBg : '#f5f5f5' }}>
                                     {product.image ? (
                                         <img
                                             src={product.image}
                                             alt={product.name}
-                                            className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-700 mixture-blend-multiply"
+                                            className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-700"
+                                            style={{ mixBlendMode: 'multiply' }}
                                             loading="lazy"
                                         />
                                     ) : (
@@ -82,23 +110,23 @@ const ProductGrid = () => {
                                 </div>
 
                                 <div className="p-8 flex-grow flex flex-col items-center text-center">
-                                    <span className="text-xs text-white font-bold uppercase tracking-wider mb-3">
+                                    <span className={`text-xs font-bold uppercase tracking-wider mb-3 ${product.image ? 'text-gray-500' : 'text-white'}`}>
                                         {formatCategory(product.category)}
                                     </span>
-                                    <h3 className="text-xl font-serif font-bold text-white mb-2 group-hover:text-primary transition-colors">
+                                    <h3 className={`text-xl font-serif font-bold mb-2 group-hover:text-primary transition-colors ${product.image ? 'text-dark' : 'text-white'}`}>
                                         {product.name}
                                     </h3>
                                     {product.size && (
-                                        <span className="inline-block px-3 py-1 bg-white/20 text-white text-xs font-medium rounded-md mb-2">
+                                        <span className={`inline-block px-3 py-1 text-xs font-medium rounded-md mb-2 ${product.image
+                                            ? 'bg-dark/10 text-dark/70'
+                                            : 'bg-white/20 text-white'
+                                            }`}>
                                             {product.size}
                                         </span>
                                     )}
 
-
-
-                                    {/* Description Snippet */}
                                     {product.description && (
-                                        <p className="text-white/90 text-sm line-clamp-2 leading-relaxed opacity-90">
+                                        <p className={`text-sm line-clamp-2 leading-relaxed opacity-90 ${product.image ? 'text-gray-600' : 'text-white/90'}`}>
                                             {product.description}
                                         </p>
                                     )}
@@ -114,7 +142,30 @@ const ProductGrid = () => {
                     </AnimatePresence>
                 </motion.div>
 
-                {filteredProducts.length === 0 && (
+                {/* Show More / Show Less */}
+                {hiddenCount > 0 && (
+                    <div className="flex justify-center mt-12">
+                        <button
+                            onClick={() => setShowMore(!showMore)}
+                            className="group flex items-center gap-2 px-8 py-3 rounded-full bg-white border border-gray-200 text-gray-600 font-medium text-sm
+                                       hover:border-primary hover:text-primary hover:shadow-lg hover:shadow-primary/10 transition-all duration-300"
+                        >
+                            {showMore ? (
+                                <>
+                                    Show Less
+                                    <ChevronUp size={18} className="group-hover:-translate-y-0.5 transition-transform" />
+                                </>
+                            ) : (
+                                <>
+                                    Show More ({hiddenCount} more)
+                                    <ChevronDown size={18} className="group-hover:translate-y-0.5 transition-transform" />
+                                </>
+                            )}
+                        </button>
+                    </div>
+                )}
+
+                {displayedProducts.length === 0 && (
                     <div className="text-center py-20">
                         <p className="text-gray-400 text-lg">No products found in this category.</p>
                     </div>

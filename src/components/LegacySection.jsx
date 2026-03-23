@@ -67,7 +67,7 @@ const LegacySection = () => {
                     >
                         <div className="relative rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(0,_0,_0,_0.5)] transform rotate-2 hover:rotate-0 transition-all duration-500">
                             <img
-                                src="/images/legacy_catalogue_no_text.jpg"
+                                src="/images/legacy_catalogue.png"
                                 alt="Sikkim Supreme Catalogue"
                                 className="w-full h-auto object-cover"
                             />
