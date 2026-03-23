@@ -13,7 +13,7 @@ const B2BPage = () => {
                     className="text-center mb-12"
                 >
                     <h1 className="text-4xl md:text-5xl font-serif font-bold text-dark mb-4">Partner with Us</h1>
-                    <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                    <p className="text-lg text-justify text-gray-600 max-w-4xl mx-auto leading-relaxed">
                         This page is dedicated to Business-to-Business (B2B) trade and commerce conducted directly with companies and wholesalers. We offer streamlined solutions that simplify the complexities of trade and commerce by providing direct, specialised, and tailored agreements. Serving as a foundation for effective business operations, our approach enhances product promotion, operational efficiency, and fosters long-term professional relationships.
                     </p>
                     <div className="w-24 h-1 bg-accent mx-auto rounded-full mt-6"></div>

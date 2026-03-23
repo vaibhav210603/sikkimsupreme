@@ -12,7 +12,7 @@ const Navbar = () => {
         { name: 'Home', path: '/' },
         { name: 'Products', path: '/#products' }, // Handle scroll in App/Home
         { name: 'About', path: '/about' },
-        { name: 'Business', path: '/b2b' },
+        { name: 'Bulk Orders', path: '/b2b' },
     ];
 
     // Helper to handle hash scrolling if we are on the home page

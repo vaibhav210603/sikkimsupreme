@@ -38,8 +38,7 @@ const LegacySection = () => {
 
                         <div className="w-16 md:w-24 h-1 bg-primary mb-6 md:mb-8 rounded-full"></div>
 
-                        <div className="text-base md:text-lg leading-relaxed font-light text-gray-800 space-y-4">
-                            <p>
+<div className="text-base md:text-lg leading-relaxed font-light text-gray-800 space-y-4 text-justify">                            <p>
                                 The Government Fruit Preservation Factory (GFPF) is a leader in food and beverage manufacturing in Sikkim, with products marketed under the brand name "Sikkim Supreme."
                             </p>
                             <p>

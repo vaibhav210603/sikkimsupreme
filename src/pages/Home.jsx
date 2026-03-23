@@ -8,8 +8,9 @@ const Home = () => {
     return (
         <main>
             <Hero />
-            <LegacySection />
             <ProductGrid />
+            <LegacySection />
+            
         </main>
     );
 };

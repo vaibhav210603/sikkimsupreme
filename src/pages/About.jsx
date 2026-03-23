@@ -47,10 +47,10 @@ const AboutPage = () => {
                         className="space-y-6"
                     >
                         <h2 className="text-3xl font-serif font-bold text-dark">The Pride of Sikkim</h2>
-                        <p className="text-gray-600 leading-relaxed text-lg">
+                        <p className="text-gray-600 leading-relaxed text-sm text-justify">
                             The Government Fruit Preservation Factory (GFPF) was established by the Hon’ble Chogyal of Sikkim now a fully owned Public Sector Undertaking (PSU) of Government of Sikkim, operating under Commerce & Industry Department. Established in 1956 to process local fruits like oranges under the brand name “Sikkim Supreme.” Over time, GFPF expanded its operations to include the processing of a variety of fruits, vegetables, and related food products. The factory is supported by a committed and skilled team that assumes full responsibility for their work, maintaining a strong focus on quality at every stage of production. Adhering to scientific methods, GFPF’s processes have garnered positive recognition from industry professionals, government authorities, and valued customers alike.
                         </p>
-                        <p className="text-gray-600 leading-relaxed text-lg">
+                        <p className="text-gray-600 leading-relaxed text-sm text-justify">
                             We are committed to continuous innovation, developing new products that align with evolving customer needs. Our offerings enjoy popularity both locally and nationwide. Trust and quality serve as foundational principles of the modern food processing industry, fostering strong relationships between manufacturers and health-conscious consumers. By maintaining high levels of transparency and implementing clear, accurate labelling, we empower consumers to verify the origin and history of our products—thereby strengthening our brand and cultivating lasting loyalty.
                         </p>
                     </motion.div>
@@ -66,10 +66,10 @@ const AboutPage = () => {
                         className="space-y-6 md:order-1 order-2"
                     >
                         <h2 className="text-3xl font-serif font-bold text-dark">One District One Product</h2>
-                        <p className="text-gray-600 leading-relaxed text-lg">
+                        <p className="text-gray-600 leading-relaxed text-sm text-justify">
                             The One District One Product (ODOP) initiative of Government of India is designed to support indigenous products and crafts distinctive to each district, thereby enhancing local economic growth and employment prospects. Through this scheme, districts identify and promote their unique specialties, fostering recognition for regional expertise. The initiative serves to highlight the broad cultural and economic diversity of India and contributes to the preservation of traditional knowledge and craftsmanship.
                         </p>
-                        <p className="text-gray-600 leading-relaxed text-lg">
+                        <p className="text-gray-600 leading-relaxed text-sm text-justify">
                             <b>Empowering Local Economies through District-Specific Branding.</b> At GFPF, our approach involves the careful identification, effective branding, and strategic promotion of distinctive agricultural products from each district. By focusing on the unique attributes of these products, we are able to elevate local producers, ensuring their offerings gain the recognition they deserve. This targeted strategy not only uplifts the income of local communities but also plays a crucial role in reducing dependence on intermediaries. As a result, farmers and producers benefit directly, enabling a more sustainable and self-reliant agricultural sector.
                         </p>
                     </motion.div>
@@ -101,7 +101,7 @@ const AboutPage = () => {
                         className="space-y-6 text-center max-w-4xl mx-auto"
                     >
                         <h2 className="text-3xl font-serif font-bold text-dark">Brief on Safety Standards:</h2>
-                        <p className="text-gray-600 leading-relaxed text-lg">
+                        <p className="text-gray-600 leading-relaxed text-sm text-justify">
                             In today’s globalised supply chain environment, visible attributes such as freshness, taste, and nutrition, alongside critical non-visible factors including ethical sourcing and safety, directly impact consumer trust. GFPF stands as a leader in the food processing industry in Sikkim, offering wholesome ingredients. By emphasising food safety, product consistency, transparency, and genuine farm-to-table assurance, GFPF aligns its practices with industry standards for quality control and assurance, implementing both proactive and responsive measures to uphold excellence.
                         </p>
                     </motion.div>

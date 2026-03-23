@@ -51,7 +51,7 @@ const ProductGrid = () => {
     const tileBg = categoryBgColors[selectedCategory] || '#FFF3E0';
 
     return (
-        <section id="products" className="py-2 bg-[#f7eae1] scroll-mt-24">
+        <section id="products" className="py-9 bg-[#f7eae1] scroll-mt-24">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <span className="text-primary font-bold tracking-wider text-sm uppercase mb-2 block">Our Collection</span>
