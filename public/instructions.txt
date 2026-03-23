@@ -1,0 +1,9 @@
+After reviewing the site, please address the following feedback:
+
+
+
+2. Slide Navigation: The "Taste Freshness" and "Discover Jam" slides currently scroll down the page when clicked. Please update these to link directly to their respective product filters or sections.Make them for all buttons on the hero, explore collections must scroll donw to products and other slides button tot respective prodcut type,\
+
+
+4. Footer Functionality: The links within the "Product" column at the bottom of the page are currently non-functional. Please ensure these are operational. MRC images and text should point to mrcagro.com and products should point to respective product sections
+

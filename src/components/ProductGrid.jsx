@@ -1,27 +1,51 @@
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import products from '../data/products.json';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import ProductModal from './ProductModal';
+import { useLocation } from 'react-router-dom';
 
 // Subtle background colors per category — designed to complement the warm #f7eae1 page bg
 const categoryBgColors = {
     SQUASH: '#ffffffff',       // warm amber tint
     JUICE: '#ffffffff',        // soft golden
     PICKLES: '#ffffffff',      // warm spice
-    JAMS: '#ffffffff',         // berry blush
+            // berry blush
     'OTHER PRODUCTS': '#ffffffff', // earthy sage
     KOSHELI: '#ffffffff',
-    WATER: '#ffffffff',    // warm cream
+    WATER: '#ffffffff',
+    "jams and marmalades": '#ffffffff',    // warm cream
 };
 
 const ProductGrid = () => {
+    const location = useLocation();
     const categories = useMemo(() => {
         return [...new Set(products.map(p => p.category))];
     }, []);
 
     const [selectedCategory, setSelectedCategory] = useState(categories[0]);
+
+    useEffect(() => {
+        const params = new URLSearchParams(location.search);
+        const cat = params.get('category');
+        let categoryChanged = false;
+        
+        if (cat && categories.includes(cat)) {
+            setSelectedCategory(cat);
+            categoryChanged = true;
+        }
+
+        if (categoryChanged || location.hash === '#products') {
+            setTimeout(() => {
+                const element = document.getElementById('products');
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
+        }
+    }, [location.search, location.hash, categories]);
+
     const [selectedProduct, setSelectedProduct] = useState(null);
     const [showMore, setShowMore] = useState(false);
 

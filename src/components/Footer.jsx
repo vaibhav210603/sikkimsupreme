@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -17,26 +18,26 @@ const Footer = () => {
 
                         {/* MRC Branding */}
                         <div className="mt-6 pt-6 border-t border-gray-100">
-                            <div className="mb-4 flex items-center">
+                            <a href="https://mrcagro.com" target="_blank" rel="noopener noreferrer" className="mb-4 flex items-center hover:opacity-80 transition-opacity">
                                 <img src="/MRC LOGO.png" alt="MRC Agrotech Ltd." className="h-10 w-auto" />
                                 <span className="ml-2 text-lg font-bold text-primary font-serif">MRC Agrotech Ltd.</span>
-                            </div>
+                            </a>
                             <p className="text-gray-500 text-sm leading-relaxed text-justify pr-4">
-                                Marketed, distributed and webpage maintained by MRC Agrotech Ltd.
+                                Marketed, distributed and webpage maintained by <a href="https://mrcagro.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">MRC Agrotech Ltd.</a>
                             </p>
                         </div>
                     </div>
                     <div>
                         <h4 className="text-sm font-semibold uppercase tracking-wider text-gray-900 mb-4">Products</h4>
                         <ul className="grid grid-cols-2 gap-2 text-sm text-gray-500">
-                            <li>Squash </li>
-                            <li>Juices </li>
-                            <li>Pickles </li>
-                            <li>Pastes </li>
-                            <li>Jams </li>
-                            <li>Marmalades </li>
-                            <li>KOSHELI</li>
-                            <li>Premium Gift Packs</li>
+                            <li><Link to="/?category=SQUASH#products" className="hover:text-primary transition-colors">Squash</Link></li>
+                            <li><Link to="/?category=JUICE#products" className="hover:text-primary transition-colors">Juices</Link></li>
+                            <li><Link to="/?category=PICKLES#products" className="hover:text-primary transition-colors">Pickles</Link></li>
+                            
+                            <li><Link to="/?category=jams and marmalades#products" className="hover:text-primary transition-colors">Jams & Marmalades</Link></li>
+                            <li><Link to="/?category=WATER#products" className="hover:text-primary transition-colors">Water</Link></li>
+                            <li><Link to="/?category=KOSHELI#products" className="hover:text-primary transition-colors">KOSHELI</Link></li>
+                            <li><Link to="/?category=KOSHELI#products" className="hover:text-primary transition-colors">Premium Gift Packs</Link></li>
                         </ul>
                     </div>
                     <div>

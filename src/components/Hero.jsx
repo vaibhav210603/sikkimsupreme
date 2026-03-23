@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const slides = [
     {
@@ -11,7 +12,7 @@ const slides = [
         title: <>Nature's Finest <br /> <span className="text-accent italic">Preserved</span></>,
         description: "From the pristine farms of Sikkim to your table. Experience the authentic taste of Himalayan craftsmanship.",
         buttonText: "Explore Collection",
-        link: "#products"
+        link: "/#products"
     },
     {
         type: 'image',
@@ -21,7 +22,7 @@ const slides = [
         title: <>Squashes & <br /> <span className="text-accent italic">Juices</span></>,
         description: "Authentic Himalayan fruit squashes and freshly pressed juices, bringing you the pure taste of nature's bounty.",
         buttonText: "Taste Freshness",
-        link: "#products"
+        link: "/?category=SQUASH#products"
     },
     {
         type: 'image',
@@ -31,7 +32,7 @@ const slides = [
         title: <>Jams & <br /> <span className="text-accent italic">Marmalades</span></>,
         description: "Crafted with the finest organic fruits. Our traditional jams and marmalades add sweetness to every meal.",
         buttonText: "Discover Jams",
-        link: "#products"
+        link: "/?category=jams and marmalades#products"
     },
     {
         type: 'image',
@@ -41,7 +42,7 @@ const slides = [
         title: <>Special <br /> <span className="text-accent italic">Gift Packs</span></>,
         description: "Share the joy of authentic Sikkim flavors with our carefully curated gift packs, perfect for your loved ones.",
         buttonText: "View Gift Packs",
-        link: "#products"
+        link: "/?category=KOSHELI#products"
     },
     {
         type: 'image',
@@ -51,7 +52,7 @@ const slides = [
         title: <>Sikkim <br /> <span className="text-accent italic">Kausheli</span></>,
         description: "Experience the unique and traditional Kausheli treats, lovingly prepared using time-honored Himalayan recipes.",
         buttonText: "Explore Kausheli",
-        link: "#products"
+        link: "/?category=KOSHELI#products"
     },
     {
         type: 'image',
@@ -61,7 +62,7 @@ const slides = [
         title: <>Packaged <br /> <span className="text-accent italic">Water</span></>,
         description: "Crystal clear and thoroughly purified drinking water, sourced responsibly to keep you refreshed all day long.",
         buttonText: "Learn More",
-        link: "#products"
+        link: "/?category=WATER#products"
     },
     {
         type: 'image',
@@ -71,7 +72,7 @@ const slides = [
         title: <>Authentic <br /> <span className="text-accent italic">Pickles</span></>,
         description: "Spice up your meals with our range of traditional Himalayan pickles, including the famous Dalle Khursani.",
         buttonText: "Shop Pickles",
-        link: "#products"
+        link: "/?category=PICKLES#products"
     },
 ];
 
@@ -163,10 +164,10 @@ const Hero = () => {
                             transition={{ duration: 0.8, delay: 0.6 }}
                             className={`flex flex-col sm:flex-row gap-4 ${slides[currentSlide].align === 'center' ? 'justify-center items-center' : 'justify-start items-start sm:items-start'}`}
                         >
-                            <a href={slides[currentSlide].link} className="group bg-accent text-white px-8 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-accent/50 hover:-translate-y-1 font-medium tracking-wide flex items-center justify-center gap-2 max-w-max">
+                            <Link to={slides[currentSlide].link} className="group bg-accent text-white px-8 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-accent/50 hover:-translate-y-1 font-medium tracking-wide flex items-center justify-center gap-2 max-w-max">
                                 {slides[currentSlide].buttonText}
                                 <span className="group-hover:translate-x-1 transition-transform">→</span>
-                            </a>
+                            </Link>
                         </motion.div>
                     </motion.div>
                 </AnimatePresence>

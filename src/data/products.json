@@ -326,7 +326,7 @@
   {
     "id": 36,
     "name": "Passion Fruit Jam",
-    "category": "JAMS",
+    "category": "jams and marmalades",
     "size": "100 gm",
     "description": "A delightful blend of fresh passion fruits, offering a tangy-sweet flavor perfect for toast, desserts, and more.",
     "image": "/images/product_images/JAM 100gm Passion Fruit.png",
@@ -335,7 +335,7 @@
   {
     "id": 37,
     "name": "Kiwi Jam",
-    "category": "JAMS",
+    "category": "jams and marmalades",
     "size": "260 gm",
     "description": "Made from fresh kiwis, offering a burst of sweet and tangy flavors.",
     "image": null,
@@ -344,7 +344,7 @@
   {
     "id": 38,
     "name": "Kiwi Jam",
-    "category": "JAMS",
+    "category": "jams and marmalades",
     "size": "100 gm",
     "description": "Fresh kiwis, offering a tangy-sweet flavor perfect for toast, desserts, and more.",
     "image": "/images/product_images/JAM 100gm Kiwi.png",
@@ -353,7 +353,7 @@
   {
     "id": 39,
     "name": "Pineapple Jam",
-    "category": "JAMS",
+    "category": "jams and marmalades",
     "size": "500 gm",
     "description": "This jam captures the sweetness and tanginess of fresh pineapples, perfect for any treat.",
     "image": null,
@@ -362,7 +362,7 @@
   {
     "id": 40,
     "name": "Orange Marmalade",
-    "category": "JAMS",
+    "category": "jams and marmalades",
     "size": "260 gm",
     "description": "Sweetness and tanginess of fresh pineapples, perfect for any treat.",
     "image": null,
@@ -371,7 +371,7 @@
   {
     "id": 41,
     "name": "Orange Marmalade",
-    "category": "JAMS",
+    "category": "jams and marmalades",
     "size": "500 gm",
     "description": "Classic orange marmalade with a perfect balance of sweet and citrusy flavors.",
     "image": null,
@@ -380,7 +380,7 @@
   {
     "id": 42,
     "name": "Guava Dalle Spread",
-    "category": "JAMS",
+    "category": "jams and marmalades",
     "size": "100 gm",
     "description": "Unique blend of Guava and Dalle chillies, offering sweet heat and bold Himalayan flavor.",
     "image": null,
@@ -389,7 +389,7 @@
   {
     "id": 43,
     "name": "Orange Marmalade",
-    "category": "JAMS",
+    "category": "jams and marmalades",
     "size": "100 gm",
     "description": "Delicious orange marmalade.",
     "image": null,
@@ -398,7 +398,7 @@
   {
     "id": 44,
     "name": "Mango Jam",
-    "category": "JAMS",
+    "category": "jams and marmalades",
     "size": "100 gm",
     "description": "Mango marmalade offers a perfect balance of sweet and citrusy flavors.",
     "image": null,
@@ -407,7 +407,7 @@
   {
     "id": 45,
     "name": "Mixed Fruit Jam",
-    "category": "JAMS",
+    "category": "jams and marmalades",
     "size": "500 gm",
     "description": "A delightful blend of fresh mixed fruits, offering a tangy-sweet flavor perfect for toast, desserts, and more.",
     "image": null,
@@ -416,7 +416,7 @@
   {
     "id": 58,
     "name": "Pineapple Jam",
-    "category": "JAMS",
+    "category": "jams and marmalades",
     "size": "100 gm",
     "description": "A burst of tropical pineapple flavor, ideal for toast, pastries, and desserts.",
     "image": "/images/product_images/JAM 100gm Pineapple.png",
@@ -541,10 +541,10 @@
   },
   {
     "id": 61,
-    "name": "Kosheli - Jams",
+    "name": "Kosheli - jams and marmalades",
     "category": "KOSHELI",
     "size": "100 gm",
-    "description": "A curated gift pack of our finest jams from Sikkim.",
+    "description": "A curated gift pack of our finest jams and marmalades from Sikkim.",
     "image": "/images/product_images/Kosheli Jams.png",
     "price": null
   },
